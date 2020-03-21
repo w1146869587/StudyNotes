@@ -39,3 +39,15 @@ Text(
 textDirection: TextDirection.ltr
 
 )
+
+**4、floatingActionButton**
+
+floatingActionButton: FloatingActionButton(
+
+​    onPressed: _incrementCounter,
+
+​    tooltip: 'Increment',
+
+​    child: Icon(Icons.add),
+
+   ), 
