@@ -192,3 +192,102 @@ transform:Matrix4.rotationZ(0.2)
 
 （shorthand 简略表达式）
 
+## ***注意：MediaQuery***
+
+double rpx = MediaQuery.of(context).size.width / 750;
+
+## **7、Row**
+
+1)、mainAxisAlignment
+
+ mainAxisAlignment: MainAxisAlignment.center,
+
+2）、crossAxisAlignment
+
+crossAxisAlignment: CrossAxisAlignment.center,
+
+3）、children:
+
+ children: <Widget>[]
+
+## **8、Column**
+
+1)、mainAxisAlignment
+
+ mainAxisAlignment: MainAxisAlignment.center,
+
+2）、crossAxisAlignment
+
+crossAxisAlignment: CrossAxisAlignment.center,
+
+3）、children:
+
+ children: <Widget>[]
+
+## **9、Padding**
+
+1）、padding
+
+padding:EdgeInserts.all(2.0);
+
+2)、child
+
+## **10、Image**
+
+Image.asset     本地图片
+
+Image.network 远程图片
+
+1）、alignment 
+
+Alignment
+
+图片的对齐方式 
+
+2)、color colorBlendMode
+
+设置图片的背景颜色，通常和colorBlendMode配合一起使用，这样可以是图片颜色和背景色混合。 上面的图片主是进行了颜色的混合，绿色背景和图片红色的混合
+
+3)、fit
+
+BoxFit 
+
+fit 属性用来控制图片的拉伸和挤压，这都是父容器来的。
+
+BoxFit.fill：全图显示，图片会被拉伸，并充满父容器。
+
+BoxFit.contain:全图显示，显示原比例，可能会有空隙。
+
+BoxFit.Cover:显示可能拉伸，可能裁切， 充满（图片要充满整个容器，还不变形）。
+
+BoxFit.fitWidth:宽度充满（横向充满），显示可能拉伸，可能裁切。
+
+BoxFit.fitHeight:高度充满（竖向充满），显示可能拉伸，可能裁切。
+
+BoxFit.scaleDown:效果和contain差不多，但是此属性不允许显示超过源图片大小，可小不可大。
+
+BoxFit.scaleDown:效果和contain差不多，但是此属性不允许显示超过源图片大小，可小不可大。
+
+4）、repeat
+
+平铺
+
+ImageRepeat.repeat 
+
+横向和纵向都进行重复，直到铺满整个画布。 
+ImageRepeat.repeatX
+
+横向重复，纵向不重复。 
+
+ImageRepeat.repeatY
+纵向重复，横向不重复。 
+
+5)、width                         
+宽度  一般结合ClipOval才能看到效果 
+6）、height                             
+高度  一般结合ClipOval才能看到效果 
+
+
+
+
+
