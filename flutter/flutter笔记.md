@@ -387,3 +387,13 @@ Axis
 
 控制布局主要用在GridView.builder里面
 
+
+
+GridView.Count
+
+GridView.builder
+
+
+
+
+
