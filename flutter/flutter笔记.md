@@ -349,3 +349,41 @@ ListView.builder(
 
 ## **13、GridView**
 
+1)、scrollDirection
+
+Axis
+
+滚动方法
+
+2）、padding
+
+内边距
+
+3）、resolve
+
+组件反向排序
+
+4）、crossAxisSpacing
+
+水平子Widget之间间距
+
+5）、mainAxisSpacing
+
+垂直子Widget之间间距
+
+6）、crossAxisCount
+
+一行的Widget数量
+
+7）、childAspectRatio
+
+子Widget宽度比例
+
+8）、children
+
+<Widget>[]
+
+9)、gridDelegate
+
+控制布局主要用在GridView.builder里面
+
