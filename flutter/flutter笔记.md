@@ -284,10 +284,68 @@ ImageRepeat.repeatY
 
 5)、width                         
 宽度  一般结合ClipOval才能看到效果 
-6）、height                             
+6）、height      
 高度  一般结合ClipOval才能看到效果 
 
+## **11、SizedBox**
 
+1)、width
 
+2)、height
 
+## **12、ListView**
+
+1）、scrollDirection
+
+Axis
+
+Axis.horizontal 水平列表
+
+Axis.vertical 垂直列表
+
+2）、padding
+
+EdageInset.all
+
+内边距
+
+3）、resolve
+
+组件反射排序
+
+4）、children
+
+List<Widget>[]
+
+列表元素
+
+5)、ListView.builder
+
+动态列表
+
+ListView.builder(
+
+​     itemCount: 119,
+
+​     itemBuilder:(context,index){
+
+​      return Container(
+
+​       child: Text(
+
+​        "$index"
+
+​       ),
+
+​      );
+
+​     }, 
+
+​    )
+
+## 问题
+
+>  If you are using a material widget component, like `Scaffold`, `Material`, you don't need to specify `textDirection` in your `Text` widget because `Directionality` is implicitly provided in these cases. So, a good solution would be to use:
+
+## **13、GridView**
 
