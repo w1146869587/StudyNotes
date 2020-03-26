@@ -114,3 +114,60 @@ var vm = new Vue({
 
 > 响应式的--->简而言之，就是一个网站能够兼容多个终端
 
+## 三、声明式渲染
+
+Vue.js的核心是一个允许采用简洁的模板语法来声明式地将数据渲染进DOM的系统：
+
+```html
+<div id="app">
+    {{message}}
+</div>
+ 
+var app = new Vue({
+	el:'#app',
+	data:{
+		message:'hello vue!'
+	}
+})
+```
+
+`v-bind` attribute 被称为**指令**。指令带有前缀 `v-`，以表示它们是 Vue 提供的特殊 attribute。可能你已经猜到了，它们会在渲染的 DOM 上应用特殊的响应式行为。在这里，该指令的意思是：“将这个元素节点的 `title` attribute 和 Vue 实例的 `message` 属性保持一致”。
+
+## 四、条件和循环
+
+### 1、v-if
+
+```html
+<div id="app-3">
+  <p v-if="seen">现在你看到我了</p>
+</div>
+var app3 = new Vue({
+  el: '#app-3',
+  data: {
+    seen: true
+  }
+})
+```
+
+### 2、v-for
+
+```html
+<div id="app-4">
+  <ol>
+    <li v-for="todo in todos">
+      {{ todo.text }}
+    </li>
+  </ol>
+</div>
+var app4 = new Vue({
+  el: '#app-4',
+  data: {
+    todos: [
+      { text: '学习 JavaScript' },
+      { text: '学习 Vue' },
+      { text: '整个牛项目' }
+    ]
+  }
+})
+```
+
