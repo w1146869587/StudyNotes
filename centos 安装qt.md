@@ -1,4 +1,4 @@
-# 安装 opengl
+# 安装 opengl（dbus编译依赖于opengl）
 
 yum install -y mesa*
 

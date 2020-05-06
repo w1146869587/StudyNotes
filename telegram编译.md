@@ -1,6 +1,34 @@
 # telegram编译
 
-# 一、openssl编译
+# 一、telegram地址
+
+https://github.com/telegramdesktop/tdesktop
+
+
+
+# 二、git太慢
+
+设置代理
+
+如果要设置全局代理，可以依照这样设置
+
+```text
+git config --global http.proxy http://127.0.0.1:1080
+git config --global https.proxy https://127.0.0.1:1080
+
+
+
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+
+
+git config --global http.postBuffer 524288000
+这是个很有效的配置，修改后速度有质的提升
+```
+
+
+
+# 三、openssl编译
 
 （1）、you may need to install the Win32::Console module
 
@@ -42,7 +70,7 @@ Prevent calling Win32::Console::DESTROY on a STDOUT handle
     `# print "\n";`
 `}`
 
-# 二、编译qt
+# 四、编译qt
 
 (1)、Configure ERROR in Qt 5.8.0 Win + VC2013 + SSL + OpenSSL
 
@@ -63,26 +91,6 @@ Qmake failed, return code 3
 Deleting the config.cache file solved it for me.
 
 https://forum.qt.io/topic/77530/configure-error-in-qt-5-8-0-win-vc2013-ssl-openssl/22
-```
-
-# 三、git太慢
-
-设置代理
-
-如果要设置全局代理，可以依照这样设置
-
-```text
-git config --global http.proxy http://127.0.0.1:1080
-git config --global https.proxy https://127.0.0.1:1080
-
-
-
-git config --global --unset http.proxy
-git config --global --unset https.proxy
-
-
-git config --global http.postBuffer 524288000
-这是个很有效的配置，修改后速度有质的提升
 ```
 
 
