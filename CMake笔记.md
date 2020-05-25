@@ -166,3 +166,7 @@ ${SRC}    // 变量SRC
 | **FIND_PACKAGE**                                             | 注意 CMAKE_MODULE_PATH                                       |
 | **EXEC_PROGRAM**( bin [work_dir] ARGS <..> [OUTPUT_VARIABLE var] [RETURN_VALUE var] ) | 执行外部程序                                                 |
 | **OPTION**( OPTION_VAR “description” [initial value] )       |                                                              |
+
+## 编译Debug模式
+
+cmake  .   -DCMAKE_BUILD_TYPE=Debug
