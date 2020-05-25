@@ -170,3 +170,9 @@ ${SRC}    // 变量SRC
 ## 编译Debug模式
 
 cmake  .   -DCMAKE_BUILD_TYPE=Debug
+
+
+
+## 编译Release模式
+
+ cmake ../src -DCMAKE_BUILD_TYPE=Release
