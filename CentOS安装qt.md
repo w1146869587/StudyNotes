@@ -202,3 +202,13 @@ relocation error: /opt/Qt5.12.3/5.12.3/gcc_64/lib/libQt5DBus.so.5: symbol dbus_m
 
 http://www.pianshen.com/article/3003418461/
 
+
+
+
+
+## LD_LIBRARY_PATH
+/home/wah/Qt5.13.2/Tools/QtCreator/lib/Qt/lib
+
+
+
+export PATH="/home/wah/Qt5.13.2/5.13.2/gcc_64/bin:$PATH"
