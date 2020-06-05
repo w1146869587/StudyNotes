@@ -20,3 +20,22 @@
 ## qt支持c++11
 
 QMAKE_CXXFLAGS += -std=c++11
+
+
+
+1.如果是使用Qt 5.x的版本，可以在 .pro文件里加这样一句话
+
+**[cpp]**[view plain](http://blog.csdn.net/q878592748/article/details/39967611?reload#) [copy](http://blog.csdn.net/q878592748/article/details/39967611?reload#)
+
+
+
+1. CONFIG += C++11 
+
+
+2.如果是 Qt 5.x之前的版本，可以使用这句话
+
+**[cpp]**[view plain](http://blog.csdn.net/q878592748/article/details/39967611?reload#) [copy](http://blog.csdn.net/q878592748/article/details/39967611?reload#)
+
+
+
+1. QMAKE_CXXFLAGS += -std=c++0x 
