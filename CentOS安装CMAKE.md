@@ -28,3 +28,27 @@ Error when bootstrapping CMake:
 
 yum install openssl-devel -y
 
+
+
+Linux cmake安装，配置以及测试
+
+编号1993 2015-05-19 14:43:12  14791  收藏
+展开
+安装
+
+cmake-3.2.2.tar.gz
+
+解压：tar zxvf cmake-3.2.2.tar.gz 得到 cmake-3.2.2
+
+进入cmake-3.2.2：cd cmake-3.2.2
+
+./bootstrap --prefix=/home/zj/cmake_install
+
+#prefix后跟安装目录
+
+make
+
+make install
+
+
+
