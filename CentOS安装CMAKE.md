@@ -52,3 +52,43 @@ make install
 
 
 
+
+
+kylin:
+
+sudo apt-get install openssl
+
+sudo apt-get install libssl-dev
+
+
+
+## apt-get执行原理
+
+如果仅仅知道怎么用而不知道为什么这么用，那就违背了学习使用linux的初衷，所以我们还是需要从原理出发来看apt-get指令时怎么运行的。
+
+### 提出问题
+
+首先需要知道的问题是：
+
+- 我们用apt-get下载的软件包是从哪里来的？
+- 下载之前要做哪些准备工作？
+
+### 软件从哪里来？
+
+所有的deb包由官方统一管理，那为什么我们能定位到这些软件包呢？这里就涉及到一个软件源的概念，在/etc/apt/目录下有一个sources.list文件，我们来看一下这个文件的内容：
+
+```
+cat /etc/apt/sources.list  
+
+deb http://security.ubuntu.com/ubuntu trusty-security main restricted
+deb-src http://security.ubuntu.com/ubuntu trusty-security main restricted
+deb http://security.ubuntu.com/ubuntu trusty-security universe
+deb-src http://security.ubuntu.com/ubuntu trusty-security universe
+deb http://security.ubuntu.com/ubuntu trusty-security multiverse
+deb-src http://security.ubuntu.com/ubuntu trusty-security multiverse
+deb http://extras.ubuntu.com/ubuntu trusty main
+deb-src http://extras.ubuntu.com/ubuntu trusty main
+deb http://us.archive.ubuntu.com/ubuntu/ trusty-proposed main restricted multiverse universe   
+```
+
+由于条目太多，这里只贴出一部分。可以看出来的是，这里都是一些资源网站，软件包资源当然就是出自这里。
