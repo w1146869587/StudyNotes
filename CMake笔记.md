@@ -176,3 +176,17 @@ cmake  .   -DCMAKE_BUILD_TYPE=Debug
 ## 编译Release模式
 
  cmake ../src -DCMAKE_BUILD_TYPE=Release
+
+
+
+
+
+# vs2010 编译
+
+\# 用于生成 Visual Studio 10Win64 工程文件
+
+CMake -G "Visual Studio 10 Win64"
+
+\# 用于生成 Visual Studio 10Win32 工程文件
+
+CMake -G "Visual Studio 10"
