@@ -23,3 +23,7 @@ git clone https://chromium.googlesource.com/external/gyp
 
 进入刚刚拷贝的gyp目录，然后执行： 
 gyp.bat –no-circular-check “../../client/windows/breakpad_client.gyp”
+
+三、注意
+
+一定不能使用绝对路径，要使用相对路径，所以为什么要拷贝gyp文件夹到tools文件夹下面。 
