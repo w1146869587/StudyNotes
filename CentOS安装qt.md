@@ -209,6 +209,33 @@ http://www.pianshen.com/article/3003418461/
 ## LD_LIBRARY_PATH
 /home/wah/Qt5.13.2/Tools/QtCreator/lib/Qt/lib
 
-
-
 export PATH="/home/wah/Qt5.13.2/5.13.2/gcc_64/bin:$PATH"
+
+****
+
+export PATH="/home/wah/Qt5.13.2/Tools/QtCreator/lib/Qt/lib:$PATH"
+
+
+
+
+
+export QTCDIR=/home/csns/program/qtcreator-4.7.1
+
+export PATH=$QTCDIR/bin:$PATH
+
+export MANPATH=$QTCDIR/man:$MANPATH
+
+export LD_LIBRARY_PATH=$QTCDIR/lib:$LD_LIBRARY_PATH
+————————————————
+版权声明：本文为CSDN博主「黄畅」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/u011648270/article/details/82631598
+
+
+
+
+
+
+
+export QTCDIR=/home/wah/Qt5.13.2/Tools/QtCreator/lib/Qt
+export PATH=$QTCDIR/bin:$PATH 
+export LD_LIBRARY_PATH=$QTCDIR/lib:$LD_LIBRARY_PATH
