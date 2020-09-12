@@ -78,5 +78,21 @@ vi ./git/config 当前仓库的配置
 
 git pull
 
+## 设置代理
 
+如果要设置全局代理，可以依照这样设置
+
+```text
+git config --global http.proxy http://127.0.0.1:1080
+git config --global https.proxy https://127.0.0.1:1080
+
+
+
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+
+
+git config --global http.postBuffer 524288000
+这是个很有效的配置，修改后速度有质的提升
+```
 
