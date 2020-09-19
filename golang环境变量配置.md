@@ -259,3 +259,22 @@ launch.json 文件内的内容，将下面的配置全部复制上去就好了~
 ![img](http://ww1.sinaimg.cn/large/007OROpSgy1g5pbxlmfqbj306008f0t1.jpg)
 
 ## 关注公众号「闹闹吃鱼」领取更多资源，不仅仅只是技术
+
+
+
+
+
+
+
+
+
+## Windows 10 (command line)
+
+- Open a command prompt (`Win` + `r` then type `cmd`) or a powershell window (`Win` + `i`).
+- Type `setx GOPATH %USERPROFILE%\go`. (This will set the `GOPATH` to your `[home folder]\go`, such as `C:\Users\yourusername\go`.)
+- Close the command or PowerShell window. (The environment variable is only available for new command or PowerShell windows, not for the current window.)
+
+https://github.com/golang/go/wiki/SettingGOPATH#windows
+
+
+
