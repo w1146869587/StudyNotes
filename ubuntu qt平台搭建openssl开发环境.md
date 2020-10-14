@@ -57,3 +57,24 @@ LIBS += /usr/local/ssl/lib/libssl.so /usr/local/ssl/lib/libcrypto.so
 执行
 sudo ldconfig
 以更新/etc/ld.so.cache文件；
+
+
+
+
+
+
+
+# Qt *.pro文件的INCLUDEPATH和LIBS写法
+
+## 一般的通用，如图所示：
+
+![INCLUDEPATH和LIBS写法](https://img-blog.csdnimg.cn/20190414110559221.png)
+
+Tips:
+   LIBS的写法有上面2种，即：
+   ①使用-L和-l（推荐)，L：Local，即库的位置，表示的是库所在的文件夹。
+   LIBS += \
+       -L/usr/local/qwt-6.1.3/lib -lqwt \
+   ②直接写库，具体到绝对路径（不推荐），l：lib，即库本身，表示的是库的名称，但是注意，不需要加dll/so等后缀，Qt作为一个跨平台的技术，后缀会根据平台自动选择。
+   LIBS += \
+       /usr/local/qwt-6.1.3/lib/* \
