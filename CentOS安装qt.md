@@ -239,3 +239,43 @@ export LD_LIBRARY_PATH=$QTCDIR/lib:$LD_LIBRARY_PATH
 export QTCDIR=/home/wah/Qt5.13.2/Tools/QtCreator/lib/Qt
 export PATH=$QTCDIR/bin:$PATH 
 export LD_LIBRARY_PATH=$QTCDIR/lib:$LD_LIBRARY_PATH
+
+qt.qpa.plugin: Could not load the Qt platform plugin “xcb” in “” even though it was found
+Asked 8 months ago
+Active 1 month ago
+Viewed 635 times
+2
+
+I'm getting
+
+ qt.qpa.plugin: Could not load the Qt platform plugin "xcb" in "" even though it was found.
+
+after a fresh installation of qt creator in Debian 9. Unfortunately, the solutions here tell me to do ldd /usr/lib/qt/plugins/platforms/libqxcb.so but /usr/lib/qt/ doesn't even exist.
+qt
+debian
+share improve this question follow
+asked Jan 12 at 0:30
+Guerlando OCs
+11544 silver badges1616 bronze badges
+
+    1
+    execute export QT_DEBUG_PLUGINS=1 and execute your executable: ./your_executable, what is the output? – eyllanesc Jan 12 at 3:35 
+
+add a comment
+2 Answers
+0
+
+Follow this two steps, it work for me with wireshark
+
+$ sudo -s
+# sudo apt-get install libcap2-bin
+
+and reboot for more ...
+share improve this answer follow
+answered May 26 at 3:44
+Sebastian Duran
+5744 bronze badges
+add a comment
+0
+
+sudo apt-get install --reinstall libxcb-xinerama0
